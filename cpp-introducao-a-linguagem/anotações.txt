@@ -1,0 +1,12 @@
+std = standart (padrão) utiliza da classe padrão;
+
+!! Rodar programa C++
+g++ nomeprograma.cpp -o nomeprogramacompilado.out
+
+./nomeprogramacompilado.out
+
+!! Definir blocos de codigos utilizados na classee
+using namespace std;
+
+
+!! const por padrão colocar em CAPSLOCK
