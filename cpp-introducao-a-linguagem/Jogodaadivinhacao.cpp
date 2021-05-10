@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -8,20 +10,50 @@ int main()
     cout << "* Bem - vindos ao jogo da adivinhacao! *" << endl;
     cout << "****************************************" << endl;
 
-    const int SECRET_NUMBER = 42;
+    cout << "Escolha o seu nivel de dificuldade: " << endl;
+    cout << "Facil (F), Medio (M) ou dificil (D)" << endl;
+
+    char difficulty;
+    cin >> difficulty;
+
+    int number_of_attempts;
+
+    if (difficulty == 'F')
+    {
+        number_of_attempts = 15;
+    }
+    else if (difficulty == 'M')
+    {
+        number_of_attempts = 10;
+    }
+    else if (difficulty == 'D')
+    {
+        number_of_attempts = 5;
+    }
+    else
+    {
+        cout << "Dificuldade invalida" << endl;
+        exit(1);
+    }
+
+    srand(time(NULL));
+    const int SECRET_NUMBER = rand() % 100;
 
     bool incorrect = true;
     int attempts = 0;
 
-    while (incorrect)
+    double points = 1000.0;
+
+    for (attempts = 1; attempts <= number_of_attempts; attempts++)
     {
-        attempts++;
         int kick;
 
         cout << "Tentativa " << attempts << endl;
         cout << "Qual seu chute? ";
-
         cin >> kick;
+
+        double lost_points = abs(kick - SECRET_NUMBER) / 2.0;
+        points = points - lost_points;
 
         cout << "O valor do seu chute e: " << kick << endl;
 
@@ -33,6 +65,7 @@ int main()
         {
             cout << "Parabens! Voce acertou o numero secreto" << endl;
             incorrect = false;
+            break;
         }
         else if (big_kick)
         {
@@ -44,5 +77,15 @@ int main()
         }
     }
     cout << "Fim de jogo!" << endl;
-    cout << "Voce acertou o numero secreto em " << attempts << " tentativas" << endl;
+    if (incorrect)
+    {
+        cout << "Voce perdeu tente novamente!" << endl;
+    }
+    else
+    {
+        cout << "Voce acertou o numero secreto em " << attempts << " tentativas" << endl;
+        cout.precision(2);
+        cout << fixed;
+        cout << "Sua pontuacao foi de " << points << " pontos." << endl;
+    }
 }
