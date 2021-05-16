@@ -8,5 +8,11 @@ g++ nomeprograma.cpp -o nomeprogramacompilado.out
 !! Definir blocos de codigos utilizados na classee
 using namespace std;
 
+!! Utilizar make windows
+mingw32-make nomeArquivo
 
 !! const por padrão colocar em CAPSLOCK
+
+!! map utilizado para criar dicionarios em C++
+tipo de dado e valor que recebe
+map<char, bool> nome dele
