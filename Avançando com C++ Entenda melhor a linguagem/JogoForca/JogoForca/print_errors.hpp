@@ -1,4 +1,6 @@
 #pragma once
 #include <vector>
 
-void print_errors(std::vector<char> errors_kicks);
+namespace Forca {
+	void print_errors(const std::vector<char>& errors_kicks);
+}

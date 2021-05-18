@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <vector>
+#include <array>
 #include "incorrect.hpp"
 #include "letter_exists.hpp"
 #include "print_header.hpp"
@@ -13,23 +13,27 @@
 
 using namespace std;
 
-string secret_word;
-map<char, bool> kicked;
-vector<char> errors_kicks;
+
+static string secret_word;
+static map<char, bool> kicked;
+static vector<char> errors_kicks;
+
 
 int main()
 {
+
     print_header();
 
     secret_word = word_draw();
 
     while (incorrect(secret_word, kicked) && errors_kicks.size() < 5)
     {
+        using namespace Forca;
         print_errors(errors_kicks);
 
         print_word(secret_word, kicked);
 
-        funcKick(&kicked, &errors_kicks);
+        funcKick(&kicked, &errors_kicks, secret_word);
     }
     cout << "Fim de jogo!" << endl;
     cout << "A palavra secreta era: " << secret_word << endl;

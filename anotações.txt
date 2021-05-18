@@ -50,3 +50,49 @@ tipo* nomevariavel
 
 deferencia (*variavel)
 errors_kicks->func
+
+!!variavel static, só existe no contexto
+
+!!namespace como se fosse uma pagina virtual
+vai precisar usar o operador de acesso :: 
+
+namespace Nome {
+}
+
+ou
+
+void Nome::NomeMethod
+
+using namespace para não usar o :: nos metodos
+
+porque não usar o using namespace nos arquivos de cabeçalhos, cuidar para não tirar o poder das bibliotecas
+
+
+//Referencia
+std::string&
+pega o mesmo endereço de memoria de uma variavel, e retorna seu valor, assim não copia a variavel
+
+
+!!stack é um espaço de memoria alocado para um determinado codigo exemplo variaveis e no final do metodo essa stack é
+desalocada
+
+!!heap criar espaços na memoria e deixar alocada
+int* func() {
+
+    //Criando endereço de memoria int    
+    int* j = new int;
+    *j = 5;
+    return j;
+}
+
+int main()
+{
+    int* i;
+    i = func();
+    delete i;
+}
+
+
+!!usando pra executar tal codigo
+    #if 0
+    #endIf

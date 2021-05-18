@@ -1,5 +1,7 @@
 #pragma once
-#include <map>
-#include <vector>
 
-void funcKick(std::map<char, bool>* kicked, std::vector<char>* errors_kicks);
+#include <string>
+#include <vector>
+#include <map>
+
+void funcKick(std::map<char, bool>* kicked, std::vector<char>* errors_kicks, std::string& secret_word);

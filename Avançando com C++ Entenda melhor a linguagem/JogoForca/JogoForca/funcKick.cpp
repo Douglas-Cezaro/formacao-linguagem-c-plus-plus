@@ -2,7 +2,7 @@
 #include "letter_exists.hpp"
 #include "funcKick.hpp"
 
-void funcKick(std::map<char, bool>* kicked, std::vector<char>* errors_kicks )
+void funcKick(std::map<char, bool>* kicked, std::vector<char>* errors_kicks, std::string& secret_word)
 {
     std::cout << "Seu chute: ";
     char kick;
@@ -10,7 +10,7 @@ void funcKick(std::map<char, bool>* kicked, std::vector<char>* errors_kicks )
 
     (*kicked)[kick] = true;
 
-    if (letter_exists(kick))
+    if (letter_exists(kick, secret_word))
     {
         std::cout << "Voce acertou! Seu chute esta na palavra." << std::endl;
     }

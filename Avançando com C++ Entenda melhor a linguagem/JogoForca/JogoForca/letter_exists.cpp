@@ -1,8 +1,6 @@
-#include <string>
+#include "letter_exists.hpp"
 
-extern std::string secret_word;
-
-bool letter_exists(char kick)
+bool letter_exists(char kick, std::string& secret_word)
 {
     for (char letter : secret_word)
     {
