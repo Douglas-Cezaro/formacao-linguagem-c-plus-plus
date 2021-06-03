@@ -96,3 +96,21 @@ int main()
 !!usando pra executar tal codigo
     #if 0
     #endIf
+
+!!Variaveis de uma classe são chamados de atributos/propriedades
+
+!!Quando criamos um objeto, falamos que instanciamos
+Conta conta = new Conta();
+
+!!Classe é uma forma para criar os objetos
+
+!!Programação orientação objeto é um paradigma da programação utilizando classes e objetos
+
+ABSTRACAO
+Basicamente abstração é a habilidade de trazer para o sistema o que é essencial de ser representado. Por exemplo, uma conta do mundo real possui número da agência, limite de crédito, código do banco, etc. Mas nós abstraímos estes conceitos para representarmos somente os dados necessários.
+
+É muito importante que este conceito esteja claro para que código inútil não seja desenvolvido.
+
+
+Design Early Returns in C++
+https://www.fluentcpp.com/2018/08/24/how-to-design-early-returns-in-c-based-on-procedural-programming/
