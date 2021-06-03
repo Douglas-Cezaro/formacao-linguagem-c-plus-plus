@@ -24,7 +24,7 @@ void Conta::depositar(float valorADepositar) {
 	saldo += valorADepositar;
 }
 
-float Conta::recuperaSaldo()
+float Conta::recuperaSaldo() const
 {
 	return saldo;
 }

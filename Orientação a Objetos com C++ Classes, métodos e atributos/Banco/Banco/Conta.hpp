@@ -12,7 +12,7 @@ private:
 public:
 	void sacar(float valorASacar);
 	void depositar(float valorADepositar);
-	float recuperaSaldo();
+	float recuperaSaldo() const;
 	std::string recuperaNumeroConta();
 	std::string recuperaCpfTitular();
 	std::string recuperaNomeTitular();

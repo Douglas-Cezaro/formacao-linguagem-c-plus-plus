@@ -4,6 +4,10 @@
 
 using namespace std;
 
+void ExibeSaldo (const Conta& conta) {
+	cout << "O saldo da conta e: " << conta.recuperaSaldo() << endl;
+}
+
 int main()
 {
 	Conta umaConta;
@@ -13,9 +17,9 @@ int main()
 	umaOutraConta.depositar(500);
 	umaOutraConta.sacar(200);
 
-	cout << "Uma conta: " << umaConta.recuperaSaldo() << endl;
+	ExibeSaldo(umaConta);
 	cout << "Nome Titular: " << umaConta.recuperaNomeTitular() << endl;
-	cout << "Uma outra conta: " << umaOutraConta.recuperaSaldo() << endl;
+	ExibeSaldo(umaOutraConta);
 
 
 	return 0;
