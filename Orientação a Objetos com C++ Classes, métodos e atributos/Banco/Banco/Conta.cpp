@@ -47,15 +47,3 @@ std::string Conta::recuperaCpfTitular() {
 std::string Conta::recuperaNomeTitular() {
 	return nomeTitular;
 }
-
-void Conta::definirNomeTitular(std::string nome) {
-	nomeTitular = nome;
-}
-
-void Conta::definirCpfTitular(std::string cpf) {
-	cpfTitular = cpf;
-}
-
-void Conta::definirNumeroConta(std::string conta) {
-	numeroConta = conta;
-}

@@ -124,3 +124,9 @@ atraves dos metodos de acesso (getters e setters) é alcançado o encapsulamento
 CLASS X STRUCT
 
 Classe todos os dados são privados e no struct são publics
+
+Lista de inicialização
+https://www.youtube.com/watch?v=1nfuYMXjZsA
+
+IMUTABILIDADE
+Utilizar o construtor para não mudar os valores das variaveis
