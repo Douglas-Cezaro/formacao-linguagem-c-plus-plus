@@ -1,6 +1,15 @@
 #include "Conta.hpp"
 #include <iostream>
 
+
+Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular) 
+{
+	this->numeroConta = numero;
+	this->nomeTitular = nomeTitular;
+	this->cpfTitular = cpfTitular;
+	this->saldo = 0;
+}
+
 //CLASSE::METODO
 void Conta::sacar(float valorASacar) {
 	if (valorASacar <= 0) {

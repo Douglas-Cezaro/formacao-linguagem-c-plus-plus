@@ -10,10 +10,9 @@ void ExibeSaldo (const Conta& conta) {
 
 int main()
 {
-	Conta umaConta;
-	umaConta.definirNomeTitular("Douglas");
+	Conta umaConta("123456", "Douglas", "123.456.789-10");
 
-	Conta umaOutraConta;
+	Conta umaOutraConta("123456", "Tadeu", "123.456.789-10");;
 	umaOutraConta.depositar(500);
 	umaOutraConta.sacar(200);
 
