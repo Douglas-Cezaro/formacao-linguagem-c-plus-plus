@@ -2,12 +2,10 @@
 #include <iostream>
 
 
-Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular) 
+//Constructor, Lista de inicialização
+Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
+	:numeroConta(numero), nomeTitular(nomeTitular), cpfTitular(cpfTitular), saldo(0)
 {
-	this->numeroConta = numero;
-	this->nomeTitular = nomeTitular;
-	this->cpfTitular = cpfTitular;
-	this->saldo = 0;
 }
 
 //CLASSE::METODO

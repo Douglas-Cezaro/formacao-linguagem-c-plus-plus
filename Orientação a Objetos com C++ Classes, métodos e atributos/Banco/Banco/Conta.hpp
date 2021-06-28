@@ -10,6 +10,8 @@ private:
 	float saldo;
 
 public:
+	// Deletar construtor padrão
+	Conta() = delete;
 	Conta(std::string numero, std::string nomeTitular, std::string cpfTitular);
 	void sacar(float valorASacar);
 	void depositar(float valorADepositar);
