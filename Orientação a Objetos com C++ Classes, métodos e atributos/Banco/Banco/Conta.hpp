@@ -4,14 +4,18 @@
 class Conta
 {
 private:
+	static int numeroDeContas;
+
+public:
+	static int recuperaNumeroDeContas();
+
+private:
 	std::string numeroConta;
 	std::string nomeTitular;
 	std::string cpfTitular;
 	float saldo;
 
 public:
-	// Deletar construtor padrão
-	Conta() = delete;
 	Conta(std::string numero, std::string nomeTitular, std::string cpfTitular);
 	void sacar(float valorASacar);
 	void depositar(float valorADepositar);

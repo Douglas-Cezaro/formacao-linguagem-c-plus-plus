@@ -1,6 +1,13 @@
-﻿  forca.cpp
+﻿  add_word.cpp
+  forca.cpp
+  funcKick.cpp
   incorrect.cpp
+  letter_exists.cpp
   print_errors.cpp
   print_word.cpp
+  read_file.cpp
+  save_file.cpp
+  word_draw.cpp
+C:\xampp\htdocs\Cursos C++\Avançando com C++ Entenda melhor a linguagem\JogoForca\JogoForca\word_draw.cpp(10,15): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
   Gerando Código...
   JogoForca.vcxproj -> C:\xampp\htdocs\Cursos C++\Avançando com C++ Entenda melhor a linguagem\JogoForca\Debug\JogoForca.exe

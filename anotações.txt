@@ -130,3 +130,6 @@ https://www.youtube.com/watch?v=1nfuYMXjZsA
 
 IMUTABILIDADE
 Utilizar o construtor para não mudar os valores das variaveis
+
+static, quando é static o atributo não se refere ao objeto, mas sim a classe, exemplo Classe Conta e objeto umaConta,
+a atributo vai pertencer a classe Conta

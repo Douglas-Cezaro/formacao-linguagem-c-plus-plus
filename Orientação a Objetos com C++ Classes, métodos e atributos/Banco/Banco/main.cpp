@@ -12,14 +12,17 @@ int main()
 {
 	Conta umaConta("123456", "Douglas", "123.456.789-10");
 
-	Conta umaOutraConta("123456", "Tadeu", "123.456.789-10");;
+	Conta umaOutraConta("123456", "Tadeu", "123.456.789-10");
+
+
+	Conta maisUmaConta("123456", "Tadeu", "123.456.789-10");
 	umaOutraConta.depositar(500);
 	umaOutraConta.sacar(200);
 
 	ExibeSaldo(umaConta);
 	cout << "Nome Titular: " << umaConta.recuperaNomeTitular() << endl;
 	ExibeSaldo(umaOutraConta);
-
+	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;
 
 	return 0;
 }

@@ -1,12 +1,18 @@
 #include "Conta.hpp"
 #include <iostream>
 
+int Conta::numeroDeContas = 0;
 
 //Constructor, Lista de inicialização
-Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
-	:numeroConta(numero), nomeTitular(nomeTitular), cpfTitular(cpfTitular), saldo(0)
+Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular):
+	numeroConta(numero), 
+	nomeTitular(nomeTitular), 
+	cpfTitular(cpfTitular), 
+	saldo(0)
 {
+	numeroDeContas++;
 }
+
 
 //CLASSE::METODO
 void Conta::sacar(float valorASacar) {
@@ -46,4 +52,8 @@ std::string Conta::recuperaCpfTitular() {
 
 std::string Conta::recuperaNomeTitular() {
 	return nomeTitular;
+}
+
+int Conta::recuperaNumeroDeContas() {
+	return numeroDeContas;
 }
