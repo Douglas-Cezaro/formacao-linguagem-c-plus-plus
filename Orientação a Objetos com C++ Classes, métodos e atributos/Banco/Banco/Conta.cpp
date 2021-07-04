@@ -4,13 +4,11 @@
 int Conta::numeroDeContas = 0;
 
 //Constructor, Lista de inicialização
-Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular):
+Conta::Conta(std::string numero, Titular titular):
 	numeroConta(numero), 
-	nomeTitular(nomeTitular), 
-	cpfTitular(cpfTitular), 
+	titular(titular),
 	saldo(0)
 {
-	verificaTamanhoDoNome();
 	numeroDeContas++;
 }
 
@@ -50,21 +48,10 @@ std::string Conta::recuperaNumeroConta() {
 	return numeroConta;
 }
 
-std::string Conta::recuperaCpfTitular() {
-	return cpfTitular;
-}
-
-std::string Conta::recuperaNomeTitular() {
-	return nomeTitular;
+Titular Conta::recuperaTitular() {
+	return titular;
 }
 
 int Conta::recuperaNumeroDeContas() {
 	return numeroDeContas;
-}
-
-void Conta::verificaTamanhoDoNome() {
-	if (nomeTitular.size() < 5) {
-		std::cout << "Nome muito curto" << std::endl;
-		exit(1);
-	}
 }
