@@ -10,9 +10,13 @@ Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular
 	cpfTitular(cpfTitular), 
 	saldo(0)
 {
+	verificaTamanhoDoNome();
 	numeroDeContas++;
 }
 
+Conta::~Conta() {
+	numeroDeContas--;
+}
 
 //CLASSE::METODO
 void Conta::sacar(float valorASacar) {
@@ -56,4 +60,11 @@ std::string Conta::recuperaNomeTitular() {
 
 int Conta::recuperaNumeroDeContas() {
 	return numeroDeContas;
+}
+
+void Conta::verificaTamanhoDoNome() {
+	if (nomeTitular.size() < 5) {
+		std::cout << "Nome muito curto" << std::endl;
+		exit(1);
+	}
 }

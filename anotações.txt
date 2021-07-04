@@ -133,3 +133,7 @@ Utilizar o construtor para não mudar os valores das variaveis
 
 static, quando é static o atributo não se refere ao objeto, mas sim a classe, exemplo Classe Conta e objeto umaConta,
 a atributo vai pertencer a classe Conta
+
+Método destrutor
+~Conta();
+é comum quando abre alguma instancia de algo, e no destrutor derrete, se abriu um arquivo no construtor no destrutor o arquivo vai ser fechado
