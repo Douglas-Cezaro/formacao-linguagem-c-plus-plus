@@ -1,13 +1,11 @@
 #include "Titular.hpp"
 #include <iostream>
 
-Titular::Titular(std::string nomeTitular, std::string cpfTitular)
+
+Titular::Titular(std::string nomeTitular, CPF cpfTitular)
 	:nomeTitular(nomeTitular), cpfTitular(cpfTitular)
 {
 	verificaTamanhoDoNome();
-}
-std::string Titular::recuperaCpfTitular() {
-	return cpfTitular;
 }
 
 std::string Titular::recuperaNomeTitular() {
