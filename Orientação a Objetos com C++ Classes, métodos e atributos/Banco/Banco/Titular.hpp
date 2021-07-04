@@ -9,7 +9,7 @@ private:
 	CPF cpfTitular;
 
 public:
-	Titular(std::string nomeTitular, CPF cpfTitular);
+	Titular(std::string nomeTitular, const CPF& cpfTitular);
 	std::string recuperaNomeTitular();
 private:
 	void verificaTamanhoDoNome();

@@ -1,6 +1,5 @@
-﻿  CPF.cpp
-C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Classes, métodos e atributos\Banco\Banco\CPF.cpp(18,29): warning C4129: '.': sequência de escape de caractere não reconhecida
-C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Classes, métodos e atributos\Banco\Banco\CPF.cpp(18,29): warning C4129: '/': sequência de escape de caractere não reconhecida
+﻿  Conta.cpp
+  Titular.cpp
   main.cpp
   Gerando Código...
   Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Classes, métodos e atributos\Banco\Debug\Banco.exe

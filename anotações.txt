@@ -137,3 +137,23 @@ a atributo vai pertencer a classe Conta
 Método destrutor
 ~Conta();
 é comum quando abre alguma instancia de algo, e no destrutor derrete, se abriu um arquivo no construtor no destrutor o arquivo vai ser fechado
+
+
+Conversão implicita
+"STRING" só isso é um vetor de caracteres
+
+string("string") aqui é uma string
+
+Criação de objetos
+
+new classe, assim vai alocar na HEAP
+
+CPF* cpf = new CPF();
+É possível alocar um objeto na heap através do new
+O operador new não só reserva o espaço de memória para um objeto, mas também chama seu construtor
+Copiar objetos é custoso e devemos evitar sempre que possível
+
+Composição e copia
+
+Evitando copias com &
+passar paramentros de classes como classe mesmo e não variavel, para não gerar copias

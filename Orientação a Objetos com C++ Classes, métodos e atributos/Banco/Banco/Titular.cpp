@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-Titular::Titular(std::string nomeTitular, CPF cpfTitular)
+Titular::Titular(std::string nomeTitular, const CPF& cpfTitular)
 	:nomeTitular(nomeTitular), cpfTitular(cpfTitular)
 {
 	verificaTamanhoDoNome();
