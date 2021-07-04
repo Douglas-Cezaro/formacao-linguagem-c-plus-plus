@@ -151,7 +151,7 @@ new classe, assim vai alocar na HEAP
 CPF* cpf = new CPF();
 É possível alocar um objeto na heap através do new
 O operador new não só reserva o espaço de memória para um objeto, mas também chama seu construtor
-Copiar objetos é custoso e devemos evitar sempre que possível
+Copiar objetos é custoso e devemos evitar sempre que possível	
 
 Composição e copia
 
