@@ -157,3 +157,12 @@ Composição e copia
 
 Evitando copias com &
 passar paramentros de classes como classe mesmo e não variavel, para não gerar copias
+
+HERANÇA
+um Funcionario é uma Pessoa e também que um Titular é uma Pessoa.
+
+Essa realação é dada através da sintaxe class Funcionario : public Pessoa. Repare no uso de : public neste local.
+
+O uso de : indica que tudo que existe em Pessoa passará a existir também em Funcionario. É como se Funcionario herdasse todos os membros.
+
+Por isso o nome deste conceito é Herança. Vamos falar muito mais sobre isso neste treinamento, mas é válido dizer desde já que a Herança é um dos pilares da orientação a objetos, e por isso é importante que entendamos bem seu funcionamento.
