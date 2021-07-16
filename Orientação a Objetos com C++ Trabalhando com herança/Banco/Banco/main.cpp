@@ -23,8 +23,6 @@ int main()
 	umaOutraConta.depositar(500);
 	umaOutraConta.sacar(200);
 
-
-	cout << "Nome Titular: " << umaConta.recuperaTitular().recuperaNomeTitular() << endl;
 	ExibeSaldo(umaOutraConta);
 
 	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;

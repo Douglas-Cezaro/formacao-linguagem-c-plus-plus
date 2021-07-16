@@ -1,4 +1,7 @@
-﻿  Funcionario.cpp
+﻿  Conta.cpp
+  Funcionario.cpp
   main.cpp
+  Pessoa.cpp
+  Titular.cpp
   Gerando Código...
-  Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Classes, métodos e atributos\Banco\Debug\Banco.exe
+  Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Debug\Banco.exe
