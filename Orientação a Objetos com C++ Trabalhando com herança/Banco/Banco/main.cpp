@@ -13,7 +13,7 @@ void ExibeSaldo(const Conta& conta) {
 
 int main()
 {
-	Conta umaConta("123456", Titular("Douglas", CPF("123")));
+	Conta umaConta("123456", Titular("Douglas", CPF("123.456.789-10")));
 	umaConta.depositar(1000);
 	ExibeSaldo(umaConta);
 
@@ -28,6 +28,8 @@ int main()
 	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;
 
 	Funcionario funcionario(CPF("123.456.789-10"), "Douglas", 500);
+
+	cout << "Nome do funcionario: " << funcionario.recuperaNome() << endl;
 
 	return 0;
 }

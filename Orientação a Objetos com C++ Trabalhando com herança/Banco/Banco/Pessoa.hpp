@@ -4,9 +4,9 @@
 
 class Pessoa
 {
-private:
-	CPF _cpf;
-	std::string _nome;
+protected:
+	CPF cpf;
+	std::string nome;
 
 public:
 	Pessoa(CPF cpf, std::string nome);
