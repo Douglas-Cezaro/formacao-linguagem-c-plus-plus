@@ -4,11 +4,10 @@
 int Conta::numeroDeContas = 0;
 
 //Constructor, Lista de inicialização
-Conta::Conta(std::string numero, Titular titular, short int tipoConta) :
+Conta::Conta(std::string numero, Titular titular) :
 	numeroConta(numero),
 	titular(titular),
-	saldo(0),
-	tipoConta(tipoConta)
+	saldo(0)
 {
 	numeroDeContas++;
 }
@@ -23,10 +22,8 @@ void Conta::sacar(float valorASacar) {
 		std::cout << "Nao pode sacar valor zero ou menor que zero" << std::endl;
 		return;
 	}
-
-	float taxa = tipoConta == 1 ? 0.05 : 0.03;
 	
-	float tarifadeSaque = valorASacar * taxa;
+	float tarifadeSaque = valorASacar * 0.05;
 
 	float valorDoSaque = valorASacar + tarifadeSaque;
 

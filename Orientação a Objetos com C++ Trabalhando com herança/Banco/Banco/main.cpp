@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "ContaPoupanca.hpp"
 #include "Conta.hpp"
 #include "CPF.hpp"
 #include "Funcionario.hpp"
@@ -7,19 +8,20 @@
 using namespace std;
 
 void ExibeSaldo(const Conta& conta) {
-	Conta umaContaDesnecessaria("123456", Titular("Douglas", string("123.456.789-10")), 1);
+	Conta umaContaDesnecessaria("123456", Titular("Douglas", string("123.456.789-10")));
 	cout << "O saldo da conta e: " << conta.recuperaSaldo() << endl;
 }
 
 int main()
 {
-	Conta umaConta("123456", Titular("Douglas", CPF("123.456.789-10")), 1);
+	ContaPoupanca umaConta("123456", Titular("Douglas", CPF("123.456.789-10")));
 	umaConta.depositar(1000);
+	umaConta.sacar(200);
 	ExibeSaldo(umaConta);
 
-	Conta umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10")), 2);
+	Conta umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
 
-	Conta maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10")), 2);
+	Conta maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
 	umaOutraConta.depositar(500);
 	umaOutraConta.sacar(200);
 
