@@ -4,10 +4,11 @@
 int Conta::numeroDeContas = 0;
 
 //Constructor, Lista de inicialização
-Conta::Conta(std::string numero, Titular titular):
-	numeroConta(numero), 
+Conta::Conta(std::string numero, Titular titular, short int tipoConta) :
+	numeroConta(numero),
 	titular(titular),
-	saldo(0)
+	saldo(0),
+	tipoConta(tipoConta)
 {
 	numeroDeContas++;
 }
@@ -23,7 +24,9 @@ void Conta::sacar(float valorASacar) {
 		return;
 	}
 
-	float tarifadeSaque = valorASacar * 0.05;
+	float taxa = tipoConta == 1 ? 0.05 : 0.03;
+	
+	float tarifadeSaque = valorASacar * taxa;
 
 	float valorDoSaque = valorASacar + tarifadeSaque;
 
