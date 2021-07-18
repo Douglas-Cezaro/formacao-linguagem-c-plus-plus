@@ -34,10 +34,12 @@ int main()
 
 	ContaCorrente umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10"), "umaSenha"));
 	umaOutraConta.depositar(1000);
-	umaOutraConta += 300;
+	(Conta&) umaOutraConta += 300;
 
 	ContaCorrente maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10"), "umaSenha"));
 	umaOutraConta.transferePara(maisUmaConta, 250);
+
+	umaOutraConta += maisUmaConta;
 
 	ExibeSaldo(umaOutraConta);
 	ExibeSaldo(umaConta);

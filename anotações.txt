@@ -250,3 +250,11 @@ Sobrecarga de operador
 Operator overload
 void operator+=();
 void operator+();
+
+não é possivel fazer sobrecarga de metodos em classes com herança
+
+para chamar o method correto precisa fazer cast
+
+(Conta&) umaOutraConta += 300;
+
+https://www.geeksforgeeks.org/does-overloading-work-with-inheritance/
