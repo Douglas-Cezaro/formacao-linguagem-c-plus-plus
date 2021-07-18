@@ -213,5 +213,5 @@ class ContaPoupanca final : public Conta
 }
 
 Method puramente virtual
-ele não vai ter implementação na classe pai
+ele não vai ter implementação na classe pai, e obriga as classes filhas implementar o metohod
 virtual float taxaDeSaque() const = 0;
