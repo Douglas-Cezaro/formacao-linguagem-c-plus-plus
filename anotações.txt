@@ -215,3 +215,5 @@ class ContaPoupanca final : public Conta
 Method puramente virtual
 ele não vai ter implementação na classe pai, e obriga as classes filhas implementar o metohod
 virtual float taxaDeSaque() const = 0;
+
+Classe abstracta em c++ é uma classe que possua um ou mais method puramente virtuais
