@@ -12,18 +12,22 @@ void ExibeSaldo(const Conta& conta) {
 	cout << "O saldo da conta e: " << conta.recuperaSaldo() << endl;
 }
 
+void RealizaSaque(Conta& conta) {
+	conta.sacar(200);
+}
+
 int main()
 {
 	ContaPoupanca umaConta("123456", Titular("Douglas", CPF("123.456.789-10")));
 	umaConta.depositar(1000);
-	umaConta.sacar(200);
+	RealizaSaque(umaConta);
 	ExibeSaldo(umaConta);
 
 	Conta umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
 
 	Conta maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
 	umaOutraConta.depositar(500);
-	umaOutraConta.sacar(200);
+	RealizaSaque(umaOutraConta);
 
 	ExibeSaldo(umaOutraConta);
 

@@ -18,11 +18,12 @@ Conta::~Conta() {
 
 //CLASSE::METODO
 void Conta::sacar(float valorASacar) {
+	std::cout << "Method conta" << std::endl;
 	if (valorASacar <= 0) {
 		std::cout << "Nao pode sacar valor zero ou menor que zero" << std::endl;
 		return;
 	}
-	
+
 	float tarifadeSaque = valorASacar * 0.05;
 
 	float valorDoSaque = valorASacar + tarifadeSaque;

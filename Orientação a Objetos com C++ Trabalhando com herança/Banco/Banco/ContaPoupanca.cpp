@@ -6,6 +6,7 @@ ContaPoupanca::ContaPoupanca(std::string numero, Titular titular):
 {}
 
 void ContaPoupanca::sacar(float valorASacar) {
+	std::cout << "Method ContaPoupanca" << std::endl;
 	if (valorASacar <= 0) {
 		std::cout << "Nao pode sacar valor zero ou menor que zero" << std::endl;
 		return;
