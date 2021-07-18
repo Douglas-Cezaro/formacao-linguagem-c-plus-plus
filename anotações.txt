@@ -243,4 +243,10 @@ class Titular : public Pessoa, public Autenticavel
 
 Tipos enumerados
 enum as variaveis são definidos no escopo geral
+
 enum class vai limitar as variaveis do enum somente para o seu escopo
+
+Sobrecarga de operador
+Operator overload
+void operator+=();
+void operator+();
