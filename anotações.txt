@@ -201,3 +201,5 @@ virtual void sacar(float valorASacar);
 
 override
 Especificar para o compilador que está sobrescrevendo um method
+
+Vtable = tabela virtual, onde vamos ter os ponteiros para as funções corretas
