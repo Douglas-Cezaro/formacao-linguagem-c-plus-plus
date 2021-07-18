@@ -240,3 +240,7 @@ class Titular : public Pessoa, Autenticavel
 class Titular : public Pessoa, public Autenticavel
 {}
 
+
+Tipos enumerados
+enum as variaveis são definidos no escopo geral
+enum class vai limitar as variaveis do enum somente para o seu escopo

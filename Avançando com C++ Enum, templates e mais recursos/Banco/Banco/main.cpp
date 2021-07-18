@@ -45,7 +45,7 @@ int main()
 
 	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;
 
-	Gerente gerente(CPF("123.456.789-10"), "Douglas", 500, "umaSenha", DiaDaSemana::Domingo);
+	Gerente gerente(CPF("123.456.789-10"), "Douglas", 500, "umaSenha", DiaDaSemana::Terca);
 	
 	FazLogin(gerente, "umaSenha");
 
