@@ -230,3 +230,12 @@ ContaPoupanca* ponteiroParaConta = new ContaPoupanca()
 // mesma coisa
 Conta* ponteiroParaConta = new ContaCorrente()
 ContaCorrente* ponteiroParaConta = new ContaCorrente()
+
+Herança multipla
+pode herdar de mais de uma classe
+
+class Titular : public Pessoa, Autenticavel
+{}
+
+class Titular : public Pessoa, public Autenticavel
+{}
