@@ -19,17 +19,19 @@ void RealizaSaque(Conta& conta) {
 int main()
 {
 	ContaPoupanca umaConta("123456", Titular("Douglas", CPF("123.456.789-10")));
-	umaConta.depositar(1000);
+	umaConta.depositar(500);
 	RealizaSaque(umaConta);
-	ExibeSaldo(umaConta);
 
 	ContaCorrente umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
+	umaOutraConta.depositar(1000);
+	umaOutraConta.transferePara(umaConta, 250);
 
 	ContaCorrente maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
-	umaOutraConta.depositar(500);
-	RealizaSaque(umaOutraConta);
+	umaOutraConta.transferePara(maisUmaConta, 250);
 
 	ExibeSaldo(umaOutraConta);
+	ExibeSaldo(umaConta);
+	ExibeSaldo(maisUmaConta);
 
 	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;
 
