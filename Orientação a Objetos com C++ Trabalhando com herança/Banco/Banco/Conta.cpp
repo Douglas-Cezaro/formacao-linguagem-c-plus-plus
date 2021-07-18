@@ -14,12 +14,7 @@ Conta::Conta(std::string numero, Titular titular) :
 
 Conta::~Conta() {
 	numeroDeContas--;
-	std::cout << "Destrutor da conta corrente" << std::endl;
-}
-
-float Conta::taxaDeSaque() const {
-	std::cout << "Method Conta::taxaDeSaque" << std::endl;
-	return 0.05;
+	std::cout << "Destrutor da conta" << std::endl;
 }
 
 //CLASSE::METODO

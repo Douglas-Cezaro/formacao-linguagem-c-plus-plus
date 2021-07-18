@@ -25,5 +25,5 @@ public:
 	float recuperaSaldo() const;
 	std::string recuperaNumeroConta();
 	Titular recuperaTitular();
-	virtual float taxaDeSaque() const;
+	virtual float taxaDeSaque() const = 0;
 };

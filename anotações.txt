@@ -211,3 +211,7 @@ final, para definir que não pode herdar desta classe
 class ContaPoupanca final : public Conta
 {
 }
+
+Method puramente virtual
+ele não vai ter implementação na classe pai
+virtual float taxaDeSaque() const = 0;

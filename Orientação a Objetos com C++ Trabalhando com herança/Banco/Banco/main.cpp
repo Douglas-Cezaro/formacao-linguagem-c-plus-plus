@@ -1,14 +1,14 @@
 #include <iostream>
 #include <string>
 #include "ContaPoupanca.hpp"
-#include "Conta.hpp"
+#include "ContaCorrente.hpp"
 #include "CPF.hpp"
 #include "Funcionario.hpp"
 
 using namespace std;
 
 void ExibeSaldo(const Conta& conta) {
-	Conta umaContaDesnecessaria("123456", Titular("Douglas", string("123.456.789-10")));
+	ContaCorrente umaContaDesnecessaria("123456", Titular("Douglas", string("123.456.789-10")));
 	cout << "O saldo da conta e: " << conta.recuperaSaldo() << endl;
 }
 
@@ -23,9 +23,9 @@ int main()
 	RealizaSaque(umaConta);
 	ExibeSaldo(umaConta);
 
-	Conta umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
+	ContaCorrente umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
 
-	Conta maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
+	ContaCorrente maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10")));
 	umaOutraConta.depositar(500);
 	RealizaSaque(umaOutraConta);
 

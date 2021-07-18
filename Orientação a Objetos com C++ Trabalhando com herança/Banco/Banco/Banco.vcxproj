@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Conta.cpp" />
+    <ClCompile Include="ContaCorrente.cpp" />
     <ClCompile Include="ContaPoupanca.cpp" />
     <ClCompile Include="CPF.cpp" />
     <ClCompile Include="Funcionario.cpp" />
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conta.hpp" />
+    <ClInclude Include="ContaCorrente.hpp" />
     <ClInclude Include="ContaPoupanca.hpp" />
     <ClInclude Include="CPF.hpp" />
     <ClInclude Include="Funcionario.hpp" />
