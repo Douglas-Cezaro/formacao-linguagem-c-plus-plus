@@ -217,3 +217,16 @@ ele não vai ter implementação na classe pai, e obriga as classes filhas imple
 virtual float taxaDeSaque() const = 0;
 
 Classe abstracta em c++ é uma classe que possua um ou mais method puramente virtuais
+
+Utiliza a herança para utilizar o Polimorfismo **muitas formas**
+Polimorfismo, o mesmo objeto pode ser representado de varias formas
+
+Uma contaCorrente pode ser representada como ContaCorrente ou como Conta
+
+// mesma coisa
+Conta* ponteiroParaConta = new ContaPoupanca()
+ContaPoupanca* ponteiroParaConta = new ContaPoupanca()
+
+// mesma coisa
+Conta* ponteiroParaConta = new ContaCorrente()
+ContaCorrente* ponteiroParaConta = new ContaCorrente()
