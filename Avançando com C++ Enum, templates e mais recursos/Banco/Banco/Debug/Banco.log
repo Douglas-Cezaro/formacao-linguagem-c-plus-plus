@@ -1,5 +1,2 @@
-﻿  ContaCorrente.cpp
-C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Banco\ContaCorrente.cpp(10,13): warning C4305: 'return': truncamento de 'double' para 'float'
-  main.cpp
-  Gerando Código...
+﻿  main.cpp
   Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Debug\Banco.exe

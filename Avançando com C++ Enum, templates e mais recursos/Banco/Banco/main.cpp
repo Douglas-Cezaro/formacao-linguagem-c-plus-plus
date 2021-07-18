@@ -26,6 +26,11 @@ void FazLogin(Autenticavel& alguem, string senha) {
 	}
 }
 
+ostream& operator<<(ostream& cout, const Conta& conta) {
+	cout << "O saldo da conta e (Operador): " << conta.recuperaSaldo() << endl;
+	return cout;
+}
+
 int main()
 {
 	ContaPoupanca umaConta("123456", Titular("Douglas", CPF("123.456.789-10"), "umaSenha"));
@@ -35,6 +40,8 @@ int main()
 	ContaCorrente umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10"), "umaSenha"));
 	umaOutraConta.depositar(1000);
 	(Conta&) umaOutraConta += 300;
+
+	cout << umaConta;
 
 	ContaCorrente maisUmaConta("123456", Titular("Tadeu", CPF("123.456.789-10"), "umaSenha"));
 	umaOutraConta.transferePara(maisUmaConta, 250);
