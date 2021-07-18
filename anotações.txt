@@ -204,8 +204,8 @@ Especificar para o compilador que está sobrescrevendo um method
 
 Vtable = tabela virtual, onde vamos ter os ponteiros para as funções corretas
 
-destrutor virtual, as classes filhas podem sobrescrever um destrutor
-
+destrutor virtual, para que o destrutor da classe derivada possa ser adicionado sem nenhuma complicação
+virtual ~Conta();
 
 final, para definir que não pode herdar desta classe
 class ContaPoupanca final : public Conta
