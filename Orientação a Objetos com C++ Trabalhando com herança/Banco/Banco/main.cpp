@@ -4,6 +4,7 @@
 #include "ContaCorrente.hpp"
 #include "CPF.hpp"
 #include "Funcionario.hpp"
+#include "Gerente.hpp"
 
 using namespace std;
 
@@ -35,9 +36,9 @@ int main()
 
 	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;
 
-	Funcionario funcionario(CPF("123.456.789-10"), "Douglas", 500);
+	Gerente gerente(CPF("123.456.789-10"), "Douglas", 500);
 
-	cout << "Nome do funcionario: " << funcionario.recuperaNome() << endl;
+	cout << "Nome do funcionario: " << gerente.recuperaNome() << endl;
 
 	return 0;
 }

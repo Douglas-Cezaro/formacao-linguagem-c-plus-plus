@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  Caixa.cpp
+C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Banco\Caixa.cpp(8,27): warning C4244: 'return': conversão de 'double' para 'float', possível perda de dados
+  main.cpp
+  Gerando Código...
   Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Debug\Banco.exe
