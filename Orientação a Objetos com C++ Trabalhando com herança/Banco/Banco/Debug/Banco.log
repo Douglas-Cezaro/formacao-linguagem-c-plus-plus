@@ -1,7 +1,6 @@
 ﻿  Conta.cpp
-C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Banco\Conta.cpp(28,22): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Banco\Conta.cpp(22,13): warning C4305: 'return': truncamento de 'double' para 'float'
   ContaPoupanca.cpp
-C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Banco\ContaPoupanca.cpp(19,22): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-  main.cpp
+C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Banco\ContaPoupanca.cpp(10,13): warning C4305: 'return': truncamento de 'double' para 'float'
   Gerando Código...
   Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Orientação a Objetos com C++ Trabalhando com herança\Banco\Debug\Banco.exe

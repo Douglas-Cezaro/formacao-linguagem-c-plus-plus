@@ -1,24 +1,11 @@
 #include <iostream>
 #include "ContaPoupanca.hpp"
 
-ContaPoupanca::ContaPoupanca(std::string numero, Titular titular):
+ContaPoupanca::ContaPoupanca(std::string numero, Titular titular) :
 	Conta(numero, titular)
 {}
 
-void ContaPoupanca::sacar(float valorASacar) {
-	std::cout << "Method ContaPoupanca" << std::endl;
-	if (valorASacar <= 0) {
-		std::cout << "Nao pode sacar valor zero ou menor que zero" << std::endl;
-		return;
-	}
-
-	float tarifadeSaque = valorASacar * 0.03;
-
-	float valorDoSaque = valorASacar + tarifadeSaque;
-
-	if (valorDoSaque > saldo) {
-		std::cout << "Saldo insuficiente" << std::endl;
-		return;
-	}
-	saldo -= valorDoSaque;
+float ContaPoupanca::taxaDeSaque() const {
+	std::cout << "Method ContaPoupanca::taxaDeSaque" << std::endl;
+	return 0.03;
 }

@@ -17,15 +17,19 @@ Conta::~Conta() {
 	std::cout << "Destrutor da conta corrente" << std::endl;
 }
 
+float Conta::taxaDeSaque() const {
+	std::cout << "Method Conta::taxaDeSaque" << std::endl;
+	return 0.05;
+}
+
 //CLASSE::METODO
 void Conta::sacar(float valorASacar) {
-	std::cout << "Method conta" << std::endl;
 	if (valorASacar <= 0) {
 		std::cout << "Nao pode sacar valor zero ou menor que zero" << std::endl;
 		return;
 	}
 
-	float tarifadeSaque = valorASacar * 0.05;
+	float tarifadeSaque = valorASacar * taxaDeSaque();
 
 	float valorDoSaque = valorASacar + tarifadeSaque;
 
