@@ -49,7 +49,5 @@ int main()
 	
 	FazLogin(gerente, "umaSenha");
 
-	cout << "Nome do funcionario: " << gerente.recuperaNome() << endl;
-
 	return 0;
 }

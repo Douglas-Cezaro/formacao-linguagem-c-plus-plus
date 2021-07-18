@@ -1,5 +1,7 @@
 #include "Caixa.hpp"
 
+using namespace Funcionario;
+
 Caixa::Caixa(CPF cpf, std::string nome, float salario):
 	Funcionario(cpf, nome, salario)
 {}

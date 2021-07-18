@@ -4,6 +4,7 @@
 #include "CPF.hpp"
 #include "Pessoa.hpp"
 
+using namespace Pessoa;
 class Titular : public Pessoa, Autenticavel
 {
 public:

@@ -1,6 +1,8 @@
 #pragma once
 #include "Funcionario.hpp"
 
+using namespace Funcionario;
+
 class Caixa final : public Funcionario
 {
 public:

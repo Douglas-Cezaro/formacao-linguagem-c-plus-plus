@@ -2,16 +2,18 @@
 #include <string>
 #include "CPF.hpp"
 
-class Pessoa
+namespace Pessoa
 {
-protected:
-	CPF cpf;
-	std::string nome;
+	class Pessoa
+	{
+	protected:
+		CPF cpf;
+		std::string nome;
 
-public:
-	Pessoa(CPF cpf, std::string nome);
+	public:
+		Pessoa(CPF cpf, std::string nome);
 
-private:
-	void verificaTamanhoDoNome();
-};
-
+	private:
+		void verificaTamanhoDoNome();
+	};
+}

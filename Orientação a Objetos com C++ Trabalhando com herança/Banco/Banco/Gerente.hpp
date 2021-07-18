@@ -2,6 +2,8 @@
 #include "Autenticavel.hpp"
 #include "Funcionario.hpp"
 
+using namespace Funcionario;
+
 class Gerente final : public Funcionario, public Autenticavel
 {
 public:
