@@ -239,3 +239,4 @@ class Titular : public Pessoa, Autenticavel
 
 class Titular : public Pessoa, public Autenticavel
 {}
+
