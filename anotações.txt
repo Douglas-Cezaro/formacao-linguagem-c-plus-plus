@@ -194,6 +194,10 @@ metodos virtuais
 utilizados como o abstract no JAVA
 
 metodos virtuais podem ser mais demorados que metodos não virtuais, perdem um pouco de performance
+A decisão sobre qual método chamar não é mais tomada pelo linker e sim pelo código em tempo de execução.
 
 virtual tipoRetorno nomeMethod
 virtual void sacar(float valorASacar);
+
+override
+Especificar para o compilador que está sobrescrevendo um method

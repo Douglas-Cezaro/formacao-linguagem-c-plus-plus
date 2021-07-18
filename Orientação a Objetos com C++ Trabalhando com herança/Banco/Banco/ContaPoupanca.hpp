@@ -6,6 +6,6 @@ class ContaPoupanca : public Conta
 {
 public:
 	ContaPoupanca(std::string numero, Titular titular);
-	void sacar(float valorASacar);
+	void sacar(float valorASacar) override;
 };
 
