@@ -2,7 +2,7 @@
 
 using namespace Funcionario;
 
-Caixa::Caixa(CPF cpf, std::string nome, float salario, short int diaDoPagamento):
+Caixa::Caixa(CPF cpf, std::string nome, float salario, DiaDaSemana diaDoPagamento):
 	Funcionario(cpf, nome, salario, diaDoPagamento)
 {}
 

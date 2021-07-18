@@ -2,7 +2,7 @@
 #include <iostream>
 
 namespace Funcionario {
-	Funcionario::Funcionario(CPF cpf, std::string nome, float salario, short int diaDoPagamento) :
+	Funcionario::Funcionario(CPF cpf, std::string nome, float salario, DiaDaSemana diaDoPagamento) :
 		Pessoa(cpf, nome),
 		salario(salario),
 		diaDoPagamento(diaDoPagamento)

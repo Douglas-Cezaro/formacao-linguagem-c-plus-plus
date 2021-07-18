@@ -158,6 +158,7 @@
     <ClInclude Include="ContaCorrente.hpp" />
     <ClInclude Include="ContaPoupanca.hpp" />
     <ClInclude Include="CPF.hpp" />
+    <ClInclude Include="DiaDaSemana.hpp" />
     <ClInclude Include="Funcionario.hpp" />
     <ClInclude Include="Gerente.hpp" />
     <ClInclude Include="Pessoa.hpp" />
