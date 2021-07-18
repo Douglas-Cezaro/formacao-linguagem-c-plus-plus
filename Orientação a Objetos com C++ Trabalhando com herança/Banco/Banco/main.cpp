@@ -18,6 +18,9 @@ void RealizaSaque(Conta& conta) {
 
 int main()
 {
+	Conta* umaContaPonteiro = new ContaPoupanca("123456", Titular("Douglas", CPF("123.456.789-10")));
+	delete umaContaPonteiro;
+	return 0 ;
 	ContaPoupanca umaConta("123456", Titular("Douglas", CPF("123.456.789-10")));
 	umaConta.depositar(1000);
 	RealizaSaque(umaConta);

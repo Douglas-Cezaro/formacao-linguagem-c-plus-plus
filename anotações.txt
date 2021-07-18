@@ -203,3 +203,11 @@ override
 Especificar para o compilador que está sobrescrevendo um method
 
 Vtable = tabela virtual, onde vamos ter os ponteiros para as funções corretas
+
+destrutor virtual, as classes filhas podem sobrescrever um destrutor
+
+
+final, para definir que não pode herdar desta classe
+class ContaPoupanca final : public Conta
+{
+}

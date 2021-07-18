@@ -14,6 +14,7 @@ Conta::Conta(std::string numero, Titular titular) :
 
 Conta::~Conta() {
 	numeroDeContas--;
+	std::cout << "Destrutor da conta corrente" << std::endl;
 }
 
 //CLASSE::METODO
