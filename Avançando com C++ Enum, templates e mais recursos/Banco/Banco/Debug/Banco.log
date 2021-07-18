@@ -1,2 +1,15 @@
-﻿  main.cpp
+﻿  Caixa.cpp
+C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Banco\Caixa.cpp(10,27): warning C4244: 'return': conversão de 'double' para 'float', possível perda de dados
+  Conta.cpp
+  ContaCorrente.cpp
+C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Banco\ContaCorrente.cpp(10,13): warning C4305: 'return': truncamento de 'double' para 'float'
+  ContaPoupanca.cpp
+C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Banco\ContaPoupanca.cpp(10,13): warning C4305: 'return': truncamento de 'double' para 'float'
+  Funcionario.cpp
+  Gerente.cpp
+C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Banco\Gerente.cpp(9,27): warning C4244: 'return': conversão de 'double' para 'float', possível perda de dados
+  Pessoa.cpp
+  Titular.cpp
+  main.cpp
+  Gerando Código...
   Banco.vcxproj -> C:\xampp\htdocs\Cursos C++\Avançando com C++ Enum, templates e mais recursos\Banco\Debug\Banco.exe

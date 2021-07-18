@@ -8,6 +8,9 @@ namespace Pessoa
 	{
 		verificaTamanhoDoNome();
 	}
+	std::string Pessoa::recuperaNome() const {
+		return nome;
+	};
 
 	void Pessoa::verificaTamanhoDoNome() {
 		if (nome.size() < 5) {

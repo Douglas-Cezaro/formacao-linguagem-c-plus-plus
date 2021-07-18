@@ -27,4 +27,5 @@ public:
 	std::string recuperaNumeroConta();
 	Titular recuperaTitular();
 	virtual float taxaDeSaque() const = 0;
+	friend std::ostream& operator<<(std::ostream& cout, const Conta& conta);
 };

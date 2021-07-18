@@ -258,3 +258,8 @@ para chamar o method correto precisa fazer cast
 (Conta&) umaOutraConta += 300;
 
 https://www.geeksforgeeks.org/does-overloading-work-with-inheritance/
+
+Friend function
+
+utilizadas para acessar dados privados de classes.
+Quando uma função já existente e conhecida precisa de acesso a membros não acessíveis.

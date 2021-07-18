@@ -12,6 +12,7 @@ namespace Pessoa
 
 	public:
 		Pessoa(CPF cpf, std::string nome);
+		std::string recuperaNome () const;
 
 	private:
 		void verificaTamanhoDoNome();
