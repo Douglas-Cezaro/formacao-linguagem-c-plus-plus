@@ -15,10 +15,14 @@ void ExibeSaldo(const Conta& conta) {
 
 void RealizaSaque(Conta& conta) {
 	auto resultado = conta.sacar(200);
-	if (resultado.first == Conta::Sucesso) {
-		cout << "Novo saldo da conta " << resultado.second << endl;
+
+	//Pode ser feito assim também, aqui retorna um ponteiro, senão tiver retorna null
+	//auto saldo = std::get_if<float>(&resultado);
+
+	if (resultado.index() == 1) {
+		cout << "Novo saldo da conta " << std::get<float>(resultado) << endl;
 	}
-	
+
 }
 
 void FazLogin(Autenticavel& alguem, string senha) {
@@ -45,7 +49,7 @@ int main()
 
 	ContaCorrente umaOutraConta("123456", Titular("Tadeu", CPF("123.456.789-10"), "umaSenha"));
 	umaOutraConta.depositar(1000);
-	(Conta&) umaOutraConta += 300;
+	(Conta&)umaOutraConta += 300;
 
 	cout << umaConta;
 
@@ -61,7 +65,7 @@ int main()
 	cout << "Numero de contas: " << Conta::recuperaNumeroDeContas() << endl;
 
 	Gerente gerente(CPF("123.456.789-10"), "Douglas", 500, "umaSenha", DiaDaSemana::Terca);
-	
+
 	FazLogin(gerente, "umaSenha");
 
 	RealizaSaque(umaConta);
