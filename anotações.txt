@@ -265,3 +265,6 @@ utilizadas para acessar dados privados de classes.
 Quando uma função já existente e conhecida precisa de acesso a membros não acessíveis.
 Example 
 https://github.com/Douglas-Cezaro/formacao-linguagem-c-plus-plus/commit/e139059d0716d5e00d046e2584a692640d2c9e6e
+
+optional: https://en.cppreference.com/w/cpp/utility/optional
+any: https://en.cppreference.com/w/cpp/utility/any
