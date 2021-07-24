@@ -14,7 +14,11 @@ void ExibeSaldo(const Conta& conta) {
 }
 
 void RealizaSaque(Conta& conta) {
-	conta.sacar(200);
+	auto resultado = conta.sacar(200);
+	if (resultado.first == Conta::Sucesso) {
+		cout << "Novo saldo da conta " << resultado.second << endl;
+	}
+	
 }
 
 void FazLogin(Autenticavel& alguem, string senha) {
@@ -60,7 +64,7 @@ int main()
 	
 	FazLogin(gerente, "umaSenha");
 
-	Conta::ResultadoSaque resultado = umaOutraConta.sacar(500);
+	RealizaSaque(umaConta);
 
 	return 0;
 }
