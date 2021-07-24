@@ -18,10 +18,10 @@ Conta::~Conta() {
 }
 
 //CLASSE::METODO
-void Conta::sacar(float valorASacar) {
+Conta::ResultadoSaque Conta::sacar(float valorASacar) {
 	if (valorASacar <= 0) {
 		std::cout << "Nao pode sacar valor zero ou menor que zero" << std::endl;
-		return;
+		return ResultadoSaque::ValorNegativo;
 	}
 
 	float tarifadeSaque = valorASacar * taxaDeSaque();
@@ -30,9 +30,10 @@ void Conta::sacar(float valorASacar) {
 
 	if (valorDoSaque > saldo) {
 		std::cout << "Saldo insuficiente" << std::endl;
-		return;
+		return ResultadoSaque::SaldoInsuficiente;
 	}
 	saldo -= valorDoSaque;
+	return ResultadoSaque::Sucesso;
 }
 
 void Conta::depositar(float valorADepositar) {

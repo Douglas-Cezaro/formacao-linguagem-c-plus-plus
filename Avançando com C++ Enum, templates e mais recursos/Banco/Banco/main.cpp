@@ -60,5 +60,7 @@ int main()
 	
 	FazLogin(gerente, "umaSenha");
 
+	Conta::ResultadoSaque resultado = umaOutraConta.sacar(500);
+
 	return 0;
 }
