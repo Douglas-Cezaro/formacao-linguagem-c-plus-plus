@@ -268,3 +268,10 @@ https://github.com/Douglas-Cezaro/formacao-linguagem-c-plus-plus/commit/e139059d
 
 optional: https://en.cppreference.com/w/cpp/utility/optional
 any: https://en.cppreference.com/w/cpp/utility/any
+
+templates
+Cuidar pra utilizar pois é o compilador que vai criar a implementação
+template<typename MeuTipo>
+MeuTipo Menor(MeuTipo a, MeuTipo b) {
+	return a < b ? a : b;
+}
