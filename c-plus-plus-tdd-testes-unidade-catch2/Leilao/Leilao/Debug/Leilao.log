@@ -1,2 +1,2 @@
-﻿MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo não resolvido, _main, referenciado na função "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\xampp\htdocs\Cursos C++\c-plus-plus-tdd-testes-unidade-catch2\Leilao\Debug\Leilao.exe : fatal error LNK1120: 1 externo não resolvidos
+﻿  teste-avaliador.cpp
+  Leilao.vcxproj -> C:\xampp\htdocs\Cursos C++\c-plus-plus-tdd-testes-unidade-catch2\Leilao\Debug\Leilao.exe
